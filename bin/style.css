@@ -1,0 +1,88 @@
+AnchorPane{
+	-fx-font-family: 'Play', sans-serif;
+}
+.button_darkGray {
+	-fx-background-color: #8e8e90;
+	-fx-border-color: black;
+	-fx-border-width: 0.2px;
+	-fx-text-fill: white;
+	-fx-font-size: 20px;
+}
+.button_darkGray:hover {
+	-fx-background-color:#6f6f70;
+}
+.button_darkGray:pressed:hover {
+	-fx-background-color:#8e8e90;
+}
+.button_gray {
+	-fx-background-color: #DCDDD8;
+	-fx-border-color: black;
+	-fx-border-width: 0.2px;
+	-fx-font-size: 20px;
+}
+.button_gray:hover {
+	-fx-background-color:#bbbcb8;
+}
+.button_gray:pressed:hover {
+	-fx-background-color: #DCDDD8;
+}
+.button_white {
+	-fx-font-size:20px;
+	-fx-background-color: #EFEFEF;
+	-fx-border-color: black;
+	-fx-border-width: 0.2px;
+}
+.button_white:hover{
+	-fx-background-color: #cecece;
+}
+.button_white:pressed:hover{
+	-fx-background-color: #EFEFEF;
+}
+.button_menu{
+	-fx-background-color:#394456;
+}
+.button_menu:hover{
+	-fx-background-color: #222831;
+}
+.button_menu:pressed:hover{
+	-fx-background-color:#394456;
+}
+.button_menu:selected{
+	-fx-background-color: #222831;
+}
+.button_M{
+	-fx-background-color: #262f3a;
+	-fx-border-width: 0.2px;
+	-fx-border-color:white;
+	-fx-text-fill: white;
+	-fx-font-size:14px;
+}
+.button_M:hover{
+	-fx-background-color: #394456;
+}
+.button_M:pressed:hover{
+	-fx-background-color: #262f3a;
+}
+
+
+
+.label_memory{
+	-fx-font-family: 'Orbitron', cursive;
+	-fx-font-size:35px;
+}
+.label_date{
+	-fx-font-size:25px;
+}
+.label_transform{
+	-fx-font-size:35px;
+}
+
+
+.date-picker {
+    -fx-font-size: 16px;
+}
+.choiceBox{
+	-fx-background-color: #262f3a;
+	-fx-border-color:#222831;
+	-fx-border-width:1px;
+}
