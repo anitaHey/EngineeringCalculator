@@ -1,6 +1,9 @@
 AnchorPane{
 	-fx-font-family: 'Play', sans-serif;
 }
+.background{
+	-fx-background-color: #262f3a;
+}
 .button_darkGray {
 	-fx-background-color: #8e8e90;
 	-fx-border-color: black;
@@ -63,8 +66,28 @@ AnchorPane{
 .button_M:pressed:hover{
 	-fx-background-color: #262f3a;
 }
+.button_memory_big{
+	-fx-font-family: 'Play', sans-serif;
+	-fx-font-size:30px;
+	-fx-text-fill: white;
+}
+.button_memory_small{
+	-fx-font-family: 'Play', sans-serif;
+	-fx-font-size:25px;
+	-fx-text-fill: white;
+}
+.button_memory{
+	-fx-background-color: #262f3a;
+	-fx-pref-Height:80px;
+	-fx-pref-Width:300px;
+}
 
-
+.button_memory:hover{
+	-fx-background-color: #394456;
+}
+.button_memory:pressed:hover{
+	-fx-background-color: #262f3a;
+}
 
 .label_memory{
 	-fx-font-family: 'Orbitron', cursive;
@@ -73,10 +96,19 @@ AnchorPane{
 .label_date{
 	-fx-font-size:25px;
 }
+.label_dateans{
+		-fx-font-family: 'Play', sans-serif;
+		-fx-font-size:30px;
+}
 .label_transform{
 	-fx-font-size:35px;
 }
-
+.label_answer{
+	-fx-font-size:40px;
+}
+.label_process{
+	-fx-font-size:25px;
+}
 
 .date-picker {
     -fx-font-size: 16px;
@@ -85,4 +117,54 @@ AnchorPane{
 	-fx-background-color: #262f3a;
 	-fx-border-color:#222831;
 	-fx-border-width:1px;
+	 -fx-font-size: 20px;
+}
+.choiceBox>.label {
+	-fx-text-fill: white;
+}
+.scroll-pane{
+-fx-background-color: #262f3a;
+  -fx-background-radius: 2em;
+}
+
+.scroll-bar:vertical .track{
+    -fx-background-color :derive(#262f3a,20.0%);
+    -fx-border-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-border-radius :2.0em;
+}
+
+
+.scroll-bar:vertical .increment-button ,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color :derive(#262f3a,20.0%);
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 10.0 0.0 0.0;
+
+}
+
+ .scroll-bar .increment-arrow,
+ .scroll-bar .decrement-arrow{
+    -fx-shape : " ";    
+    -fx-padding :0.15em 0.0;
+}
+
+ .scroll-bar:vertical .increment-arrow,
+ .scroll-bar:vertical .decrement-arrow{
+    -fx-shape : " ";    
+    -fx-padding :0.0 0.15em;
+}
+
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color :derive(#262f3a,10.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+
+
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color :derive(#262f3a,30.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
 }

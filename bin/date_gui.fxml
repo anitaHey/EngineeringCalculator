@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" minHeight="0.0"
+	minWidth="0.0" prefHeight="180.0" prefWidth="200.0"
+	fx:controller="DateController">
+	<children>
+		<DatePicker fx:id="date_picker1" layoutX="37.0"
+			layoutY="108.0" prefHeight="38.0" prefWidth="254.0"
+			promptText="Choose the Date" styleClass="date-picker" />
+		<Label layoutX="37.0" layoutY="69.0" styleClass="label_date"
+			text="From" textFill="WHITE" />
+		<Label layoutX="37.0" layoutY="206.0" styleClass="label_date"
+			text="To" textFill="WHITE" />
+		<DatePicker fx:id="date_picker2" layoutX="37.0"
+			layoutY="239.0" prefHeight="38.0" prefWidth="254.0"
+			promptText="Choose the Date" styleClass="date-picker" />
+		<Label layoutX="37.0" layoutY="338.0" styleClass="label_date"
+			text="Differece" textFill="WHITE" />
+		<Label fx:id="date_answer" layoutX="37.0" layoutY="385.0"
+			prefHeight="78.0" prefWidth="399.0" textFill="WHITE"
+			styleClass="label_dateans" />
+
+	</children>
+</AnchorPane>
+

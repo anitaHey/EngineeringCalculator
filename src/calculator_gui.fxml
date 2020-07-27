@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?import com.sun.javafx.fxml.builder.JavaFXSceneBuilder?>
+<?import javafx.scene.control.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
 
-
- <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <AnchorPane xmlns:fx="http://javafx.com/fxml" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"  fx:controller="CalculatorController">
                      <children>
-                        <Pane id="Calculatir_panel" layoutX="18.0" layoutY="13.0" prefHeight="546.0" prefWidth="418.0">
+                        <Pane layoutX="18.0" layoutY="13.0" prefHeight="546.0" prefWidth="418.0">
                            <children>
                               <GridPane layoutX="2.0" layoutY="202.0" prefHeight="341.0" prefWidth="416.0" style="-fx-border-color: #222831; -fx-border-width: 1px;">
                                 <columnConstraints>
@@ -31,44 +30,44 @@
                                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
-                                    <Button id="calculator_numberxy" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="Xy" GridPane.columnIndex="1" />
-                                    <Button id="calculator_numberx2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="X²" />
-                                    <Button id="calculator_numberSin" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="sin" GridPane.columnIndex="2" />
-                                    <Button id="calculator_numberCos" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="cos" GridPane.columnIndex="3" />
-                                    <Button id="calculator_numberTan" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="tan" GridPane.columnIndex="4" />
-                                    <Button id="calculator_numberRoot" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="√" GridPane.rowIndex="1" />
-                                    <Button id="calculator_numberUp" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_gray" text="↑" GridPane.rowIndex="2" />
-                                    <Button id="calculator_numberPI" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_gray" text="π" GridPane.rowIndex="3" />
-                                    <Button id="calculator_numberN!" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_gray" text="n!" GridPane.rowIndex="4" />
-                                    <Button id="calculator_number10x" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="10x" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                    <Button id="calculator_numberExp" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="Exp" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                                    <Button id="calculator_numberLog" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="log" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                    <Button id="calculator_numberMod" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="Mod" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                                    <Button id="calculator_numberCE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_gray" text="CE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                    <Button id="calculator_numberC" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_gray" text="C" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                    <Button id="calculator_numberLeft" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_gray" text="←" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-                                    <Button id="calculator_number/" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="÷" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-                                    <Button id="calculator_number7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_white" text="7" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                                    <Button id="calculator_number9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_white" text="9" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-                                    <Button id="calculator_number4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_white" text="4" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                                    <Button id="calculator_number8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_white" text="8" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                                    <Button id="calculator_number*" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="×" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-                                    <Button id="calculator_number5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_white" text="5" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                                    <Button id="calculator_number6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_white" text="6" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-                                    <Button id="calculator_number-" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="-" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-                                    <Button id="calculator_number+-" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_gray" text="±" GridPane.rowIndex="5" />
-                                    <Button id="calculator_number(" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_gray" text="(" GridPane.rowIndex="6" />
-                                    <Button id="calculator_number1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_white" text="1" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                                    <Button id="calculator_number)" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_gray" text=")" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                                    <Button id="calculator_number2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_white" text="2" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                                    <Button id="calculator_number0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_white" text="0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-                                    <Button id="calculator_number3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_white" text="3" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-                                    <Button id="calculator_number." maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_gray" text="." GridPane.columnIndex="3" GridPane.rowIndex="6" />
-                                    <Button id="calculator_number+" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="＋" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-                                    <Button id="calculator_number=" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="＝" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                                    <Button fx:id="calculator_numberxy" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="Xy" GridPane.columnIndex="1" />
+                                    <Button fx:id="calculator_numberx2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="X²" />
+                                    <Button fx:id="calculator_numberSin" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="sin" GridPane.columnIndex="2" />
+                                    <Button fx:id="calculator_numberCos" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="cos" GridPane.columnIndex="3" />
+                                    <Button fx:id="calculator_numberTan" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="tan" GridPane.columnIndex="4" />
+                                    <Button fx:id="calculator_numberRoot" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="√" GridPane.rowIndex="1" />
+                                    <Button fx:id="calculator_numberUp" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_gray" text="↑" GridPane.rowIndex="2" />
+                                    <Button fx:id="calculator_numberPI" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_gray" text="π" GridPane.rowIndex="3" />
+                                    <Button fx:id="calculator_numberN" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_gray" text="n!" GridPane.rowIndex="4" />
+                                    <Button fx:id="calculator_number10x" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="10x" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Button fx:id="calculator_numberExp" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="Exp" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                    <Button fx:id="calculator_numberLog" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="log" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <Button fx:id="calculator_numberMod" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="Mod" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                    <Button fx:id="calculator_numberCE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_gray" text="CE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Button fx:id="calculator_numberC" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_gray" text="C" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <Button fx:id="calculator_numberLeft" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_gray" text="←" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                    <Button fx:id="calculator_numberadd" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="÷" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                    <Button fx:id="calculator_number7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_white" text="7" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <Button fx:id="calculator_number9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_white" text="9" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                    <Button fx:id="calculator_number4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_white" text="4" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Button fx:id="calculator_number8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_white" text="8" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                    <Button fx:id="calculator_numbermul" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="×" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                    <Button fx:id="calculator_number5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_white" text="5" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                    <Button fx:id="calculator_number6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_white" text="6" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                    <Button fx:id="calculator_numbermin" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="-" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                                    <Button fx:id="calculator_numberplmin" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_gray" text="±" GridPane.rowIndex="5" />
+                                    <Button fx:id="calculator_numberri" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_gray" text="(" GridPane.rowIndex="6" />
+                                    <Button fx:id="calculator_number1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_white" text="1" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <Button fx:id="calculator_numberle" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_gray" text=")" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Button fx:id="calculator_number2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_white" text="2" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                    <Button fx:id="calculator_number0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_white" text="0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                    <Button fx:id="calculator_number3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_white" text="3" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                    <Button fx:id="calculator_numberp" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_gray" text="." GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                                    <Button fx:id="calculator_numberplus" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="＋" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                                    <Button fx:id="calculator_numberequ" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_darkGray" text="＝" GridPane.columnIndex="4" GridPane.rowIndex="6" />
                                  </children>
                               </GridPane>
-                              <GridPane id="calculator_m" layoutX="4.0" layoutY="173.0" prefHeight="26.0" prefWidth="413.0">
+                              <GridPane layoutX="4.0" layoutY="173.0" prefHeight="26.0" prefWidth="413.0">
                                 <columnConstraints>
                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -80,14 +79,14 @@
                                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
-                                    <Button id="calculator_numberMC" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_M" text="MC" />
-                                    <Button id="calculator_numberMR" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_M" text="MR" GridPane.columnIndex="1" />
-                                    <Button id="calculator_numberM+" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_M" text="M+" GridPane.columnIndex="2" />
-                                    <Button id="calculator_numberM-" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_M" text="M-" GridPane.columnIndex="3" />
-                                    <Button id="calculator_numberMS" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="26.0" prefWidth="87.0" styleClass="button_M" text="MS" GridPane.columnIndex="4" />
+                                    <Button fx:id="calculator_numberMC" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_M" text="MC" />
+                                    <Button fx:id="calculator_numberMR" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_M" text="MR" GridPane.columnIndex="1" />
+                                    <Button fx:id="calculator_numberMplus" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_M" text="M+" GridPane.columnIndex="2" />
+                                    <Button fx:id="calculator_numberMmin" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_M" text="M-" GridPane.columnIndex="3" />
+                                    <Button fx:id="calculator_numberMS" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="26.0" prefWidth="87.0" styleClass="button_M" text="MS" GridPane.columnIndex="4" />
                                  </children>
                               </GridPane>
-                              <GridPane id="calculator_3" layoutX="4.0" layoutY="145.0" prefHeight="22.0" prefWidth="221.0">
+                              <GridPane layoutX="4.0" layoutY="145.0" prefHeight="22.0" prefWidth="221.0">
                                 <columnConstraints>
                                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -97,20 +96,14 @@
                                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
-                                    <Button id="calculator_numberDEG" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_M" text="DEG" />
-                                    <Button id="calculator_numberHYP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_M" text="HYP" GridPane.columnIndex="1" />
-                                    <Button id="calculator_numberFE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="20.0" prefWidth="78.0" styleClass="button_M" text="F-E" GridPane.columnIndex="2" />
+                                    <Button fx:id="calculator_numberDEG" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_M" text="DEG" />
+                                    <Button fx:id="calculator_numberHYP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="button_M" text="HYP" GridPane.columnIndex="1" />
+                                    <Button fx:id="calculator_numberFE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="20.0" prefWidth="78.0" styleClass="button_M" text="F-E" GridPane.columnIndex="2" />
                                  </children>
                               </GridPane>
-                              <Label id="calculator_answer" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="6.0" layoutY="64.0" prefHeight="70.0" prefWidth="401.0" styleClass="label_answer" textFill="WHITE">
-                                 <font>
-                                    <Font size="40.0" />
-                                 </font>
+                              <Label fx:id="calculator_answer" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="6.0" layoutY="64.0" prefHeight="70.0" prefWidth="401.0" styleClass="label_answer" textFill="WHITE">
                               </Label>
-                              <Label id="calculator_process" layoutX="4.0" layoutY="9.0" prefHeight="57.0" prefWidth="407.0" styleClass="label_process" textFill="WHITE">
-                                 <font>
-                                    <Font size="25.0" />
-                                 </font>
+                              <Label fx:id="calculator_process" layoutX="4.0" layoutY="9.0" prefHeight="57.0" prefWidth="407.0" styleClass="label_process" textFill="WHITE">
                               </Label>
                            </children>
                         </Pane>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<TabPane xmlns:fx="http://javafx.com/fxml/1" fx:id="menu"
+	layoutX="-7.0" layoutY="-13.0" prefHeight="614.0" prefWidth="544.0"
+	side="LEFT"
+	style="-fx-background-color: #262f3a; -fx-border-width: 5px; -fx-border-color: #222831;"
+	tabClosingPolicy="UNAVAILABLE" tabMaxHeight="73.0" tabMaxWidth="59.0"
+	tabMinHeight="73.0" tabMinWidth="59.0" fx:controller="TabController">
+	<tabs>
+		<Tab fx:id="button_calculator" styleClass="button_menu">
+			<fx:include fx:id="calculator"
+				source="calculator_gui.fxml" />
+			<graphic>
+				<ImageView fitHeight="49.0" fitWidth="51.0"
+					pickOnBounds="true" preserveRatio="true"
+					style="-fx-background-color: #EFEFEF;">
+					<image>
+						<Image url="@../image/calculator.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Tab>
+		<Tab fx:id="button_date" styleClass="button_menu">
+			<fx:include fx:id="date" source="date_gui.fxml" />
+			<graphic>
+				<ImageView fitHeight="46.0" fitWidth="51.0"
+					pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../image/calendar.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Tab>
+		<Tab styleClass="button_menu" fx:id="button_capacity">
+			<fx:include fx:id="capacity" source="capacity_gui.fxml" />
+			<graphic>
+				<ImageView fitHeight="54.0" fitWidth="46.0"
+					pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../image/measuring-cup.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Tab>
+		<Tab styleClass="button_menu" fx:id="button_angle">
+			<fx:include fx:id="angle" source="angle_gui.fxml" />
+			<graphic>
+				<ImageView fitHeight="54.0" fitWidth="46.0"
+					pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../image/protractor.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Tab>
+		<Tab styleClass="button_menu" fx:id="button_length">
+			<fx:include fx:id="length" source="length_gui.fxml" />
+			<graphic>
+				<ImageView fitHeight="47.0" fitWidth="45.0"
+					pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../image/ruler-in-diagonal-position.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Tab>
+		<Tab styleClass="button_menu" fx:id="button_weight">
+			<fx:include fx:id="weight" source="weight_gui.fxml" />
+			<graphic>
+				<ImageView fitHeight="44.0" fitWidth="49.0"
+					pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../image/scale.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Tab>
+		<Tab styleClass="button_menu" fx:id="button_area">
+			<fx:include fx:id="area" source="area_gui.fxml" />
+			<graphic>
+				<ImageView fitHeight="45.0" fitWidth="49.0"
+					pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../image/shape.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Tab>
+		<Tab styleClass="button_menu" fx:id="button_temperature">
+			<fx:include fx:id="temperature"
+				source="temperature_gui.fxml" />
+			<graphic>
+				<ImageView fitHeight="50.0" fitWidth="46.0"
+					pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../image/thermometer.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Tab>
+	</tabs>
+</TabPane>
+
